@@ -1,135 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alex-Ojukwu - Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-
-    header {
-      background-color: #222;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-
-    header p {
-      margin-top: 10px;
-      font-size: 1.2em;
-      color: #ccc;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #333;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .project-card {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    footer {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    a {
-      color: #007BFF;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <title>portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header>
-    <h1>ALEX-OJUKWU</h1>
-    <p style="color:rgb(7, 181, 31);">Aspiring Software Developer | Data Analyst | Cybersecurity Enthusiast</p>
+    <h1>Alex-Ojukwu Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section>
+  <section id="about">
     <h2>About Me</h2>
-    <p>
-      I'm passionate about building digital solutions and solving real-world problems through technology. 
-      With experience in cybersecurity tools (InsightVM, SCCM), hardware troubleshooting, and interests in machine learning, 
-      I'm continuously learning and evolving in the tech space.
-    </p>
+    <p> my name is Alex-ojukwu Nduka and I’m a developer passionate about building web applications and learning new technologies.</p>
   </section>
 
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>Languages: Python, JavaScript, Java, TypeScript</li>
-      <li>Frameworks: React, Node.js</li>
-      <li>Tools: Git, VS Code, Postman, SCCM</li>
-      <li>Data Analysis: Pandas, NumPy, Matplotlib</li>
-      <li>Cybersecurity: InsightVM, ProjectBI</li>
-    </ul>
-  </section>
-
-  <section>
+  <section id="projects">
     <h2>Projects</h2>
-    <div class="projects">
-      <div class="project-card">
-        <h3>Word Scramble Game</h3>
-        <p>A fun Java-based game that challenges users to unscramble words. Includes hint and score tracking features.</p>
+    <div class="project-list">
+      <div class="project">
+        <h3>Project One</h3>
+        <p>this is a portfolio form with interactivity</p>
       </div>
-      <div class="project-card">
-        <h3>Personal Budget Tracker</h3>
-        <p>Built with JavaScript and React, this app helps users manage their expenses and savings efficiently.</p>
-      </div>
-      <div class="project-card">
-        <h3>Cybersecurity Dashboard</h3>
-        <p>Used tools like InsightVM and ProjectBI to visualize system vulnerabilities and patching status.</p>
+      <div class="project">
+        <h3>Project Two</h3>
+        <p>using html and css.</p>
       </div>
     </div>
   </section>
 
-  <section>
+  <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="alexojukwunduka@gmail.com">alexojukwunduka@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/Alex-Ojukwu/html" target="_blank">github.com/yourgithub</a></p>
+    <p>Email: alexojukwunduka@gmail.com</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <p>&copy; 2025 My Portfolio</p>
   </footer>
-
 </body>
 </html>
