@@ -56,7 +56,7 @@ footer {
   margin-top: 2rem;
 }
 
-/* Responsive design */
+
 @media (min-width: 600px) {
   .project-list {
     flex-direction: row;
