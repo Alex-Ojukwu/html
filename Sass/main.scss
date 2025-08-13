@@ -1,0 +1,70 @@
+@import './resets';
+@import './variables';
+
+@function weight($weight-name) {
+    @return map-get($map: $font-weights, $key:$weight-name )
+}
+
+
+
+@mixin default {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: $primary-color;
+    color: $secondary-color;
+    
+}
+
+@mixin FlexCenter($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction
+}
+
+@mixin Theme($light-Theme:true) {
+    @if $light-Theme {
+        background:  lighten($primary-color, 100%);
+        color: darken($color: $secondary-color, $amount: 100%)
+    }
+}
+@mixin mobile{
+    @media (max-width: $mobile) {
+        @content;
+
+    }
+}
+
+body{
+    
+    @include default;
+    font-weight: weight(medium);
+    
+}
+
+header{
+        padding: 50px;
+        color: black;
+        background-color: $secondary-color;
+        text-align: center;
+    }
+
+.main{
+    @include FlexCenter(row);
+    
+    width: 80%;
+    padding-top: 30px;
+    margin: 0 auto;
+    p{
+        font-weight: map-get($map: $font-weights, $key:regular );
+        &:hover {color: chartreuse;}
+    }
+
+    @include mobile{
+        flex-direction: column;
+    }
+
+}
+
+.light{
+    @include Theme(false)
+}
